@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2015",
+    "strict": true,
+    // "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    // "baseUrl": ".",
+    // "types": [],
+    "paths": {},
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "declaration": true,
+    "typeRoots": ["node_modules/@types"],
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "**/dist"]
+}
