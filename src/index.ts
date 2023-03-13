@@ -1,9 +1,13 @@
-export default function isChineseMainland(delay: number = 1000) {
+export default function isChineseMainland(delay = 2000): Promise<boolean> {
   return Promise.race([
-    fetch('https://graph.facebook.com/feed')
+    fetch('https://discovery.googleapis.com/discovery/v1/apis?name=0')
       .then(() => false)
       .catch(() => true),
-    new Promise<false>((resolve) => setTimeout(() => resolve(false), delay)),
+    new Promise<boolean>((resolve) =>
+      setTimeout(() => {
+        resolve(true)
+      }, delay)
+    ),
   ])
 }
 

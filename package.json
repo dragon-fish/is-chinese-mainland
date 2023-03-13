@@ -1,6 +1,6 @@
 {
   "name": "is-chinese-mainland",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple way to check if the user is in Chinese Mainland",
   "type": "module",
   "main": "dist/index.js",
